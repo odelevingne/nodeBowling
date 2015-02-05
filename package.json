@@ -1,0 +1,14 @@
+{
+  "name": "nodeBowling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/jasmine-node/bin/jasmine-node spec/ --verbose"
+  },
+  "author": "Oliver Delevingne",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
