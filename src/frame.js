@@ -25,5 +25,4 @@ Frame.prototype.playFrame = function(roll1, roll2) {
   }
 };
 
-
 module.exports = Frame;
