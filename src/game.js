@@ -6,16 +6,19 @@ function Game() {
 }
 
 Game.prototype.score = function() {
+  var frame = this.firstFrame;
+  while(frame !== undefined){
+    this.runningScore += frame.score();
+    frame = frame.nextFrame();
+  }
   return this.runningScore;
 };
 
 Game.prototype.playFrame = function(roll1, roll2) {
-  if(this.currentFrame === undefined) {
-    frame = new Frame;
-    this.firstFrame = frame;
+  if(this.firstFrame === undefined) {
+    this.firstFrame = new Frame();
   }
   this.firstFrame.playFrame(roll1, roll2);
-  this.runningScore = this.firstFrame.score()
 };
 
 module.exports = Game;

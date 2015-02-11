@@ -15,4 +15,8 @@ describe('Frame', function(){
     frame.playFrame(2,5);
     expect(frame.score()).toEqual(7);
   });
+
+  it('should have an undefined next frame by default', function(){
+    expect(frame.nextFrame()).toBeUndefined();
+  })
 });

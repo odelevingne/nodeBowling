@@ -16,4 +16,10 @@ describe('Game', function(){
     expect(game.score()).toEqual(7);
   });
 
+  it('should be able to play a second frame', function(){
+    game.playFrame(2,5);
+    game.playFrame(4,5);
+    expect(game.score()).toEqual(16);
+  });
+
 });
