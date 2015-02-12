@@ -26,7 +26,7 @@ describe('Game', function(){
     game.playFrame(2,5);
     game.playFrame(4,5);
     game.playFrame(3,3);
-    expect(game.score()).toEqual(25);
+    expect(game.score()).toEqual(22);
   })
 
 });

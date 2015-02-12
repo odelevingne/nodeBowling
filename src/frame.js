@@ -20,8 +20,14 @@ Frame.prototype.playFrame = function(roll1, roll2) {
     this.roll1 = roll1;
     this.roll2 = roll2;
   }else {
-    this.next = new Frame();
-    this.next.playFrame(roll1, roll2);
+    var frame = this;
+    var current = frame;
+    while(frame !== undefined){
+      current = frame;
+      frame = frame.nextFrame();
+    }
+    current.next = new Frame();
+    current.next.playFrame(roll1, roll2);
   }
 };
 
