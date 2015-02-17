@@ -2,7 +2,7 @@ function Frame() {
   this.roll1 = undefined;
   this.roll2 = undefined;
   this.next = undefined;
-};
+}
 
 Frame.prototype.nextFrame = function() {
   return this.next;

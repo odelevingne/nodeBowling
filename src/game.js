@@ -1,4 +1,4 @@
-var Frame = require('./frame')
+var Frame = require('./frame');
 
 function Game() {
   this.runningScore = 0;
